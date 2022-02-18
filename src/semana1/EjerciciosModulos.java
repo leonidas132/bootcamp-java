@@ -18,10 +18,12 @@ public class EjerciciosModulos {
         num1 = sc.nextFloat();
         System.out.println("Ingrese el segundo numero decimal");
         num2 =sc.nextFloat();
+
         float suma = num1 + num2;
         float resta = num1 - num2;
         float multiplicasion = num1 * num2;
         float division = num1 / num2;
+
         System.out.println("la suma es :"+ suma);
         System.out.println("la resta es : "+resta);
         System. out.println("la miltiplicasion es :" + multiplicasion);
@@ -34,7 +36,7 @@ public class EjerciciosModulos {
         System.out.println("la resta es : "+String.format("%.20f",resta));
         System. out.println("la miltiplicasion es :" + String.format("%.20f",multiplicasion));
         System.out.println("la division es :" + String.format("%.20f",division));
-
+        System.out.println("\n");
         System.out.println("operacion sin decimales");
         int sum = (int) suma;
         System.out.println("suma es : " + sum);
