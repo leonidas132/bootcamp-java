@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 
 public class Calendario {
     String date;
-    String day,month,year;
+    String dia1,mes1,anio1;
     int position ;
     int dia,mes,anio;
     public String CapturaFecha() {
@@ -26,31 +26,47 @@ public class Calendario {
     }
     public void covercionFecha (){
         position = date.indexOf("/");// Indexof se utiliza para obtener el valor entero de un indice partiendo del objeto de tipo String
-        day = date.substring(0, position); // un subString es un un fragmento de la cadena de String principal en este caso tomara la posiciones que se le asigne
+        dia1 = date.substring(0, position); // un subString es un un fragmento de la cadena de String principal en este caso tomara la posiciones que se le asigne
        // System.out.println(day);
         date = date.substring(position+1);
       //  System.out.println(date);
         position = date.indexOf("/");
-        month =date.substring(0, position);
+        mes1 =date.substring(0, position);
       //  System.out.println(month);
         date = date.substring(position+1);
-        year = date;
+        anio1 = date;
      //   System.out.println(year);
-        dia = Integer.parseInt(day);
-        mes= Integer.parseInt(month);
-        anio=Integer.parseInt(year);
-        if (1>dia ||dia>31|| 1 > mes ||mes>12 ||1900> anio || anio >2099){
-            System.out.println("LA FECHA ES INCORRECTA");
+        dia = Integer.parseInt(dia1);
+        mes= Integer.parseInt(mes1);
+        anio=Integer.parseInt(anio1);
+
+            if (mes == 2) {
+
+                if(( anio % 4 == 0) && anio % 100 != 0){
+                    if(dia >= 1 && dia <=29){
+                        System.out.println("ES UN AÑO BISIESTO");
+                    }
+                }else{
+                        if  (dia >= 1 && dia <= 28){
+                            System.out.println("la fecha es correcta");
+                        }
+
+                    }
+
+            } else {
+                if(dia >= 1 && dia <= 31 ){
+                    System.out.println("año y fecha correcta");
+                }
+            }
 
         }
-        else{
-            System.out.println("la fecha es correcta");
-        }
+
+
     }
 
 
 
-}
+
 
 
 
