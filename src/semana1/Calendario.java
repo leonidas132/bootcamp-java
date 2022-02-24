@@ -1,4 +1,4 @@
-package semana1;
+//package semana1;
 
 
 import jdk.swing.interop.SwingInterOpUtils;
@@ -7,7 +7,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Calendario {
+/*public class Calendario {
     String date;
     String dia1,mes1,anio1;
     int position ;
@@ -65,7 +65,7 @@ public class Calendario {
     }
 
 
-
+*/
 
 
 
