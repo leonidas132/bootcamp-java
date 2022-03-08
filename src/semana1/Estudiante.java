@@ -1,7 +1,7 @@
 package semana1;
 // ejercicio de herencia
-public class Estudiante extends Persona {
-    private int codigoEstudiante;
+public class Estudiante  {
+  /*  private int codigoEstudiante;
     private float notaFinal;
 
     public Estudiante(String nombre,String apellido,int edad,int codigoEstudiante,float notaFinal){  // metodo constructor
@@ -15,5 +15,5 @@ public class Estudiante extends Persona {
                             "\nEdad  :"+ getEdad()+
                              "\nCodigo estudiante  :"+codigoEstudiante +
                               "\n Nota final : "+ notaFinal);
-    }
+    }*/
 }
