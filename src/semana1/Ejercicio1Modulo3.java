@@ -1,4 +1,5 @@
 package semana1;
+import javax.xml.transform.stream.StreamSource;
 import java.util.Scanner;
 public class Ejercicio1Modulo3 {
 
@@ -189,6 +190,59 @@ public class Ejercicio1Modulo3 {
 
 
         }
+        // laboratorio final
+        int n1 = 100, n2 =10, n3 = 150;
+        if (n1 > n2 && n1 > n3){
+            System.out.println("el numero mayor es n1: "+ n1);
+        }else if (n2 > n1 && n2 > n3){
+            System.out.println("el numero mayor es n2: "+ n2);
+        }else if (n3 > n2 && n3 >n1){
+            System.out.println("el numero mayor es n3: "+ n3);
+        }else
+            System.out.println("comparacion fallida");
 
+
+        /*
+        Dado el siguiente código:
+            int a = 10, b=-2, c=5;
+            hay 2 números positivos y 1 negativo
+            Informar la multiplicación de los dos
+            números positivos.
+
+         */
+        int a = -10, b=10, c=5;
+        if(a>0 && b>0){
+            int mult = a * b ;
+            System.out.println(a +" * " + b + " = "+ mult);
+        }else if( a >0 && c >0){
+            int mult = a * c ;
+            System.out.println(a +" * " + c + " = "+ mult);
+        }else if (b > 0 && c > 0) {
+            int mult = b * c;
+            System.out.println(b + " * " + c + " = " + mult);
+        }else
+          System.out.println("Hay dos valores negativo");
+
+        /*
+        Dado el siguiente código:
+        String usuario = “Pepito”, clave= “1234”;
+        Informar los siguientes casos:
+        Si usuario=”pepito” y clave=”1234” informar
+        Bienvenido pepito!”
+        Si usuario=”pepito” y clave no es “1234”
+        informar “Usuario incorrecto”
+        Si usuario no es “pepito” y clave= “1234”
+        informar “Contraseña incorrecta”
+
+         */
+        String usuario1 = "Pepito", clave1= "1234";
+        if (usuario1.equals("Pepito") && clave1.equals("1234")){
+            System.out.println("Bienvenido pepito!");
+        }else if (usuario1.equals("Pepito") && clave1 != "1234"){
+            System.out.println("Contraseña incorrecta");
+        }else if ((usuario1 != "pepito") && clave1.equals("1234")){
+            System.out.println("usuario incorrecto");
+        }else
+            System.out.println("no coinciden los datos");
     }
 }
