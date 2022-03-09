@@ -40,25 +40,26 @@ public class Ejercicio1Modulo3 {
             System.out.println("recomendacion quedarce en casa");
         } else {
             System.out.println("el clima esta loco");
+        }
 
             // ejercicio de switch
-            byte opcion = 20;
+        byte opcion = 20;
 
-            switch (opcion) {
-                case 10:
-                    System.out.println("vale dioe");
-                    break;
-                case 20:
-                    System.out.println("vale 20");
-                    break;
-                case 30:
-                    System.out.println("vale 30");
-                    break;
-                default:
-                    System.out.println("no vale");
-                    break;
+        switch (opcion) {
+            case 10:
+                System.out.println("vale dioe");
+                break;
+            case 20:
+                System.out.println("vale 20");
+                break;
+            case 30:
+                System.out.println("vale 30");
+                break;
+            default:
+                System.out.println("no vale");
+                break;
 
-            }
+        }
 
         Scanner teclado = new Scanner(System.in);
         double operador, total = 0;
@@ -115,6 +116,79 @@ public class Ejercicio1Modulo3 {
                 System.out.println("opcion invalida");
         }
 
+            // ejercicio switch
+           /*
+           Crear un programa en Java que simule la petición de una opción según el siguiente menú y
+            muestre en pantalla que ha ingresado a la opción seleccionada con las opciones siguientes:
+            Gracias por contactarte con nosotros!
+            ¿En qué podemos ayudarte?
+            A) Documentación
+            B) Cotización
+            C) Asistencia
+            D) Siniestros
+            E) Información de Pagos
+            F) Otras Consultas
+            G) Anulación
+            Escribe la letra de la opción seleccionada
+            */
+        Scanner teclado1 = new Scanner (System.in);
+        String opt;
+        System.out.println("Gracia por contactarte con nosotros");
+        System.out.println("¿ En qué podemos ayudarte");
+        System.out.println("A) Documentacion \n"
+                + "B) Cotización\n"
+                + "C) Asistencia\n"
+                + "D) Siniestros\n"
+                + "E) Informacion de pagos\n"
+                + "F) Otras Consultas\n"
+                + "G) Anulacion ");
+        System.out.println("Escriba la letra de la opción seleccionada");
+        opt = teclado1.nextLine();
+
+        switch (opt){
+
+            case "a":
+            case "A":
+
+                System.out.println("Usted selecciono Documentacion");
+                break;
+
+            case "b ":
+            case "B" :
+                System.out.println("Usted selecciono Cotizacion");
+                break;
+
+            case "c ":
+            case "C" :
+                System.out.println("Usted selecciono Asistencia");
+                break;
+
+            case "d" :
+            case "D" :
+                System.out.println("Usted selecciono Siniestros");
+                break;
+
+            case "e" :
+            case "E" :
+                System.out.println("Usted selecciono Informacion de pago");
+                break;
+
+            case "f" :
+            case "F" :
+                System.out.println("Usted selecciono Otras consultas");
+                break;
+
+            case "g" :
+            case "G" :
+                System.out.println("Usted selecciono Anular proceso");
+                break;
+
+            default :
+                System.out.println("Opcion incorrecta");
+
+
+
         }
+
     }
 }
