@@ -7,7 +7,7 @@ public class Ejercicio1Modulo3 {
 
     public static void main(String[] args) {
         // ejercicio 1 modulo 3
-       Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String usuario = "hillson", clave = "0015";
         System.out.println("Este es su sistema financiero BancaMovil");
         System.out.println("Ingrese Usuario");
@@ -45,7 +45,7 @@ public class Ejercicio1Modulo3 {
             System.out.println("el clima esta loco");
         }
 
-            // ejercicio de switch
+        // ejercicio de switch
         byte opcion = 20;
 
         switch (opcion) {
@@ -134,7 +134,7 @@ public class Ejercicio1Modulo3 {
             G) Anulación
             Escribe la letra de la opción seleccionada
             */
-       Scanner teclado1 = new Scanner (System.in);
+        Scanner teclado1 = new Scanner(System.in);
         String opt;
         System.out.println("Gracia por contactarte con nosotros");
         System.out.println("¿ En qué podemos ayudarte");
@@ -148,7 +148,7 @@ public class Ejercicio1Modulo3 {
         System.out.println("Escriba la letra de la opción seleccionada");
         opt = teclado1.nextLine();
 
-        switch (opt){
+        switch (opt) {
 
             case "a":
             case "A":
@@ -157,50 +157,49 @@ public class Ejercicio1Modulo3 {
                 break;
 
             case "b ":
-            case "B" :
+            case "B":
                 System.out.println("Usted selecciono Cotizacion");
                 break;
 
             case "c ":
-            case "C" :
+            case "C":
                 System.out.println("Usted selecciono Asistencia");
                 break;
 
-            case "d" :
-            case "D" :
+            case "d":
+            case "D":
                 System.out.println("Usted selecciono Siniestros");
                 break;
 
-            case "e" :
-            case "E" :
+            case "e":
+            case "E":
                 System.out.println("Usted selecciono Informacion de pago");
                 break;
 
-            case "f" :
-            case "F" :
+            case "f":
+            case "F":
                 System.out.println("Usted selecciono Otras consultas");
                 break;
 
-            case "g" :
-            case "G" :
+            case "g":
+            case "G":
                 System.out.println("Usted selecciono Anular proceso");
                 break;
 
-            default :
+            default:
                 System.out.println("Opcion incorrecta");
-
 
 
         }
         // laboratorio final
-        int n1 = 100, n2 =10, n3 = 150;
-        if (n1 > n2 && n1 > n3){
-            System.out.println("el numero mayor es n1: "+ n1);
-        }else if (n2 > n1 && n2 > n3){
-            System.out.println("el numero mayor es n2: "+ n2);
-        }else if (n3 > n2 && n3 >n1){
-            System.out.println("el numero mayor es n3: "+ n3);
-        }else
+        int n1 = 100, n2 = 10, n3 = 150;
+        if (n1 > n2 && n1 > n3) {
+            System.out.println("el numero mayor es n1: " + n1);
+        } else if (n2 > n1 && n2 > n3) {
+            System.out.println("el numero mayor es n2: " + n2);
+        } else if (n3 > n2 && n3 > n1) {
+            System.out.println("el numero mayor es n3: " + n3);
+        } else
             System.out.println("comparacion fallida");
 
 
@@ -212,19 +211,18 @@ public class Ejercicio1Modulo3 {
             números positivos. */
 
 
-
-        int a = -10, b=10, c=5;
-        if(a>0 && b>0){
-            int mult = a * b ;
-            System.out.println(a +" * " + b + " = "+ mult);
-        }else if( a >0 && c >0){
-            int mult = a * c ;
-            System.out.println(a +" * " + c + " = "+ mult);
-        }else if (b > 0 && c > 0) {
+        int a = -10, b = 10, c = 5;
+        if (a > 0 && b > 0) {
+            int mult = a * b;
+            System.out.println(a + " * " + b + " = " + mult);
+        } else if (a > 0 && c > 0) {
+            int mult = a * c;
+            System.out.println(a + " * " + c + " = " + mult);
+        } else if (b > 0 && c > 0) {
             int mult = b * c;
             System.out.println(b + " * " + c + " = " + mult);
-        }else
-          System.out.println("Hay dos valores negativo");
+        } else
+            System.out.println("Hay dos valores negativo");
 
         /*
         Dado el siguiente código:
@@ -238,14 +236,14 @@ public class Ejercicio1Modulo3 {
         informar “Contraseña incorrecta”
 
          */
-       String usuario1 = "Pepito", clave1= "1234";
-        if (usuario1.equals("Pepito") && clave1.equals("1234")){
+        String usuario1 = "Pepito", clave1 = "1234";
+        if (usuario1.equals("Pepito") && clave1.equals("1234")) {
             System.out.println("Bienvenido pepito!");
-        }else if (usuario1.equals("Pepito") && clave1 != "1234"){
+        } else if (usuario1.equals("Pepito") && clave1 != "1234") {
             System.out.println("Contraseña incorrecta");
-        }else if ((usuario1 != "pepito") && clave1.equals("1234")){
+        } else if ((usuario1 != "pepito") && clave1.equals("1234")) {
             System.out.println("usuario incorrecto");
-        }else
+        } else
             System.out.println("no coinciden los datos");
 
 
@@ -275,21 +273,21 @@ public class Ejercicio1Modulo3 {
         */
 
         // diseñar un algoritmo que permita ingresar por teclado el nombre, edad y ciudad de una persona,
-         //los resultados deben mostrarse en panatalla
+        //los resultados deben mostrarse en panatalla
 
-         Scanner teclado2 = new Scanner (System.in);
-         System.out.println("ingrese sus datos");
-         String nombre,apellido,edad,ciudad;
-         System.out.println("ingrese el nombre");
-         nombre = teclado2.nextLine();
-         System.out.println("ingrese el apellido");
-         apellido = teclado2.nextLine();
-         System.out.println("ingrese la edad ");
-         edad = teclado2.nextLine();
-         System.out.println("ingresa ciudad");
-         ciudad = teclado2.nextLine();
+        Scanner teclado2 = new Scanner(System.in);
+        System.out.println("ingrese sus datos");
+        String nombre, apellido, edad, ciudad;
+        System.out.println("ingrese el nombre");
+        nombre = teclado2.nextLine();
+        System.out.println("ingrese el apellido");
+        apellido = teclado2.nextLine();
+        System.out.println("ingrese la edad ");
+        edad = teclado2.nextLine();
+        System.out.println("ingresa ciudad");
+        ciudad = teclado2.nextLine();
 
-        System.out.println("tu nombre es " + nombre +", tu apellido " +apellido+ " tu edad es " + edad+ " tu ciudad es "+ciudad  );
+        System.out.println("tu nombre es " + nombre + ", tu apellido " + apellido + " tu edad es " + edad + " tu ciudad es " + ciudad);
 
 
         // Diseñar un algoritmo que permita calcular el salario de un trabajador teniendo en cuenta
@@ -300,7 +298,7 @@ public class Ejercicio1Modulo3 {
         float diasTrabajados = 30;
         float salario;
         salario = diasTrabajados * valorDia;
-        System.out.println("Dias trabajados :" +diasTrabajados);
+        System.out.println("Dias trabajados :" + diasTrabajados);
         System.out.println("Valor de dia : " + valorDia);
         System.out.println("El salario correspondiente para el trabajador es :" + salario);
 
@@ -316,15 +314,15 @@ public class Ejercicio1Modulo3 {
         int suma = valor1 + valor2;
         int resta = valor1 - valor2;
         int multiplicacion = valor1 * valor2;
-        System.out.println("el valor de la suma es :"+suma);
-        System.out.println("el valor de la resta es : "+resta);
-        System.out.println("el valoir de la multiplicacion es :"+multiplicacion);
+        System.out.println("el valor de la suma es :" + suma);
+        System.out.println("el valor de la resta es : " + resta);
+        System.out.println("el valoir de la multiplicacion es :" + multiplicacion);
 
         //Diseñar un algoritmo que permita aplicar un descuento en el supermercado
         // de tal forma permita visualizar el monto a pagar después de aplicar dicho procedimiento.
-        Scanner cap = new Scanner (System.in);
-        float descuento= 0.2f ; //20%
-        float producto1,producto2,producto3;
+        Scanner cap = new Scanner(System.in);
+        float descuento = 0.2f; //20%
+        float producto1, producto2, producto3;
         System.out.println("Systemas de descuentos ");
         System.out.println("ingrese el valor primer producto");
         producto1 = cap.nextFloat();
@@ -335,25 +333,25 @@ public class Ejercicio1Modulo3 {
         float totalSinDescuento = producto1 + producto2 + producto3;
         float tolalConDescuento = totalSinDescuento * descuento;
         float total1 = totalSinDescuento - tolalConDescuento;
-        System.out.println("valor productos" +","+ producto1+","+producto2 +","+producto3);
-        System.out.println("total sin descuento "+ totalSinDescuento);
-        System.out.println("total total con descuento: "+total1);
+        System.out.println("valor productos" + "," + producto1 + "," + producto2 + "," + producto3);
+        System.out.println("total sin descuento " + totalSinDescuento);
+        System.out.println("total total con descuento: " + total1);
 
         //diseñe un algoritmo que lea dos numeros por teclado en la cual al efectuar la suma de ambos numeros
         // debe visualizarse los numero ingresados y el resultado final solo si el resultado no es negativo
 
 
-        Scanner capNumero = new Scanner (System.in);
-        int primerNumero,segundoNumero;
+        Scanner capNumero = new Scanner(System.in);
+        int primerNumero, segundoNumero;
         System.out.println("ingrese el primer numero");
         primerNumero = capNumero.nextInt();
         System.out.println("ingrese el segundo numero");
         segundoNumero = capNumero.nextInt();
-        if( primerNumero > 0 && segundoNumero > 0){
+        if (primerNumero > 0 && segundoNumero > 0) {
             int suma1 = primerNumero + segundoNumero;
-            System.out.println("primer valor : "+primerNumero);
-            System.out.println("segundo numero: "+segundoNumero);
-            System.out.println("la suma es :"+ suma1);
+            System.out.println("primer valor : " + primerNumero);
+            System.out.println("segundo numero: " + segundoNumero);
+            System.out.println("la suma es :" + suma1);
         } else
             System.out.println("los valores ingresado son negativos ");
 
@@ -366,7 +364,7 @@ public class Ejercicio1Modulo3 {
         }else
             System.out.println("no es mayor");*/
 
-       Scanner captura3 = new Scanner(System.in);
+        Scanner captura3 = new Scanner(System.in);
         String nombre1, nombreCurso;
         int notaDefinitiva;
         float numeroClaseSemestre;
@@ -391,47 +389,46 @@ public class Ejercicio1Modulo3 {
             System.out.println("felicidades choski, ganaste el semestre ");
 
 
-
-         // leer dos numeros y determinar si son posaitivos
-        int nume1, nume2 ;
-        Scanner mn = new Scanner(System.in) ;
+        // leer dos numeros y determinar si son posaitivos
+        int nume1, nume2;
+        Scanner mn = new Scanner(System.in);
         System.out.println("validar si los dos numeros son positivos");
         System.out.println("ingresar numero 1");
         nume1 = mn.nextInt();
         System.out.println("ingresar numero 2");
         nume2 = mn.nextInt();
-         if(nume1 > 0 && nume2 > 0){
-             System.out.println("los dos nuemros son positivos");
-         }
+        if (nume1 > 0 && nume2 > 0) {
+            System.out.println("los dos nuemros son positivos");
+        }
         /*
         Diseñar un algoritmo que lea el nombre de un empleado, su salario básico por hora,
          el nro. de horas trabajadas en un mes. Nos pide lo siguiente:
          */
-         Scanner datos = new Scanner (System.in);
+        Scanner datos = new Scanner(System.in);
 
-         String nombreEmpleado ;
-         float  salarioMinimoHora = 4.167f;
-         float horasTrabajadasMes ;
-         float subsidioTransporte = 100.000f;
+        String nombreEmpleado;
+        float salarioMinimoHora = 4.167f;
+        float horasTrabajadasMes;
+        float subsidioTransporte = 100.000f;
 
-         System.out.println("calcular salario del empleado");
-         System.out.println("ingrese el nombre del empleado");
-         nombreEmpleado = datos.nextLine();
-         System.out.println("ingrese horas trabajadas en el mes ");
-         horasTrabajadasMes = datos.nextFloat();
+        System.out.println("calcular salario del empleado");
+        System.out.println("ingrese el nombre del empleado");
+        nombreEmpleado = datos.nextLine();
+        System.out.println("ingrese horas trabajadas en el mes ");
+        horasTrabajadasMes = datos.nextFloat();
 
-        float salarioSinTransporte = (horasTrabajadasMes *salarioMinimoHora) ;
+        float salarioSinTransporte = (horasTrabajadasMes * salarioMinimoHora);
         float salarioTransporte = salarioSinTransporte + subsidioTransporte;
 
-        if (salarioSinTransporte > (700.000)){
+        if (salarioSinTransporte > (700.000)) {
             System.out.println(nombreEmpleado);
-            System.out.println("Horas trabajadas :"+horasTrabajadasMes );
+            System.out.println("Horas trabajadas :" + horasTrabajadasMes);
             System.out.println("Valor horas trabajadas :" + salarioMinimoHora);
-            System.out.println("salario optenido por las horas trabajadas: "+salarioSinTransporte);
-            System.out.println("Salario con subsidio de tranporte: "+ salarioTransporte);
+            System.out.println("salario optenido por las horas trabajadas: " + salarioSinTransporte);
+            System.out.println("Salario con subsidio de tranporte: " + salarioTransporte);
 
 
-        }else {
+        } else {
             System.out.println("Se le informa a " + nombreEmpleado + " que  no alcanzo el salari minimo");
             System.out.println("horas trabajadas  :" + horasTrabajadasMes);
             System.out.println("Salario con transporte :" + salarioTransporte);
@@ -462,11 +459,11 @@ public class Ejercicio1Modulo3 {
         Utilizar bucle while
         * */
         Scanner capVal = new Scanner(System.in);
-        int val1, val2,val3, sum,exi = 1 ;
-        int cont=1 ;
+        int val1, val2, val3, sum, exi = 1;
+        int cont = 1;
         System.out.println("sistemas de sumas repetitivo");
 
-        while(cont > 0 ) {
+        while (cont > 0) {
 
             System.out.println("ingrse valor");
             val1 = capVal.nextInt();
@@ -477,8 +474,8 @@ public class Ejercicio1Modulo3 {
             sum = val1 + val2 + val3;
             System.out.println("la suma es :" + sum);
             System.out.println("ingrese uno para continar, '0' para salir");
-            cont =capVal.nextInt();
-            if(cont == 0){
+            cont = capVal.nextInt();
+            if (cont == 0) {
                 System.out.println("proseso finalisado");
             }
 
@@ -494,8 +491,8 @@ public class Ejercicio1Modulo3 {
         int i = 1; //iterador
         int container = 10;
 
-        while(i <= container){
-            if (i!= 2  && i != 5 && i != 9)
+        while (i <= container) {
+            if (i != 2 && i != 5 && i != 9)
                 System.out.println(i);
 
             /*System.out.println("imprime solo 3");
@@ -513,29 +510,221 @@ public class Ejercicio1Modulo3 {
         conocimientos del operador OR (||)*/
         int x = 1;
         int n = 30;
-        while (x <= n){
-            if (x <= 10 || x >=20) // 1-2....9..10..20..
+        while (x <= n) {
+            if (x <= 10 || x >= 20) // 1-2....9..10..20..
                 System.out.println(x);
 
 
             x++;
         }
         // Imprimir la suma de los números del 1 al 10
-        int j = 1,number1 = 10;
-        int sum1=0 ;
+        int j = 1, number1 = 10;
+        int sum1 = 0;
 
-        while(j <=  number1){
-            sum1 = j + j ;
-            System.out.println("la suma es : "+j+"+"+j+"="+ sum1 );
+        while (j <= number1) {
+            sum1 = j + j;
+            System.out.println("la suma es : " + j + "+" + j + "=" + sum1);
 
             j++;
 
         }
 
 
+        Scanner scn = new Scanner(System.in);
+        String usuari = "pepe";
+        String clav = "123";
+        int z = 1;
+
+        while (z > 0) {
+            System.out.println("ingrese el usuario");
+            usuari = scn.nextLine();
+            System.out.println("ingresar clave");
+            clav = scn.nextLine();
+            if (usuario.equals("pepe") && clave.equals("123")) {
+                System.out.println("usuario y clave  correctos");
+                break;
+            } else
+                System.out.println("datos incorrectos");
+
+        }
+
+
+        /// ciclo do while
+        // imprime los numeros del 1 al 10
+        int ct = 1;
+        do {
+            System.out.println(ct);
+            ct++;
+
+        } while (ct <= 10);
+
+
+        //imprime los numeros del 10 al 1
+        int cot = 10;
+        do {
+            System.out.println(ct);
+            cot--;
+
+        } while (cot >= 1);
+
+
+            /*Crear un programa que lea números enteros (Positivos y
+            Negativos) del teclado y muestre la suma de dichos
+            números ingresados, el programa se detendrá cuando el
+            usuario indique el número 0, adicionalmente debe indicar
+            el número mayor y número menor introducido en el
+            programa
+             *
+             * */
+
+
+        Scanner scnn = new Scanner(System.in);
+        int v1, v2, v3, v4, it = 0;
+        do {
+            System.out.println("ingresa numeros negativos y positivos para sumar");
+            System.out.println("numero 1 ");
+            v1 = scnn.nextInt();
+            System.out.println("numero 2");
+            v2 = scnn.nextInt();
+            System.out.println("numero 3");
+            v3 = scnn.nextInt();
+            System.out.println("numero 4");
+            v4 = scnn.nextInt();
+            if (v1 > v2 && v1 > v3) {
+                System.out.println("numero mayor 1: " + v1);
+
+            } else if (v2 > v1 && v2 > v3) {
+                System.out.println("numero mayor 2:" + v2);
+            } else if (v3 > v1 && v3 > v2) {
+                System.out.println("numero mayor 3: " + v3);
+            } else if (v4 > v1 && v4 > v2 && v4 > v3) {
+                System.out.println("numero mayor 4: " + v4);
+            } else
+                System.out.println("ninguno es mayor");
+
+
+            if (v1 < v2 && v1 < v3) {
+                System.out.println("numero  menor es : " + v1);
+            } else if (v2 < v1 && v2 < v3) {
+                System.out.println("numero  menor es:" + v2);
+            } else if (v3 < v1 && v3 < v2) {
+                System.out.println("numero  menor es: " + v3);
+            } else if (v4 < v1 && v4 < v2 && v4 < v3) {
+                System.out.println("numero  menor es: " + v4);
+            } else
+                System.out.println("ninguno es menor");
+
+            int su = v1 + v2 + v3 + v4;
+            System.out.println("la suma es " + su);
+
+            System.out.println("ingre  '0' para salir y cualquier numero para seguir sumado ");
+            it = scnn.nextInt();
+            if (it == 0) {
+                System.out.println(" saliste del programa");
+                break;
+            } else
+                System.out.println("continia sumando");
+
+
+        } while (it > 0);
+
+        // mostrar los numeros pares de manera desendiente desde el 20
+
+        int par = 20;
+        System.out.println("numeros pares de manera decendentes ");
+        while (par != 0) {
+            System.out.println("par = " + par);
+            par = par - 2;
+        }
+
+        int pares = 0;
+        System.out.println("numero acendentes");
+        while (pares < 20) {
+            System.out.println("numeros acendentes: " + pares);
+            pares += 2;
+        }
+
+        // con do while
+        int paress = 0;
+        do {
+
+            System.out.println("numeros acendentes: " + pares);
+            paress += 2;
+        } while (paress <= 20);
+
+
+        // ciclo o bucle for
+        // imprimir numeros del numero del 10
+        System.out.println("bucle for sencillo");
+        for (int in = 0; in < 10; in++) {
+            //for (int in = 1; in <= 10; in++){
+            //System.out.println("veces que hace el ciclo " + in);
+            System.out.println("veces que hace el ciclo " + (in + 1));
+        }
+        // ciclo o bucle for
+        // imprimir numeros del 1 al 10 menos el 3 y 5
+
+        System.out.println("bucle for sencillo");
+        for (int itr = 0; itr <= 10; itr++) {
+            if (itr == 3) {
+                continue;
+            } else if (itr == 5) {
+                continue;
+            }
+
+            System.out.println("veces que hace el ciclo " + (itr));
+
+        }
+        //Imprimir los números del 1 al 10 uno
+        // abajo del otro.
+        int nro = 10;
+
+        for (int nro1 = 0; nro1 <= nro; nro1++) {
+            System.out.println(nro1);
+
+        }
+
+        //Imprimir los números del 1 al 10
+        //salteando de a dos uno abajo del otro
+
+        int nuMero = 10;
+        System.out.println("imprime numero haciendo saltos de 2 en dos");
+        for (int cons = 0; cons <= nuMero; cons += 2) {
+
+            System.out.println(cons);
+
+        }
+        //Imprimir los números del 10 al 1 uno
+        //abajo del otro.
+        int d = 10;
+        for (int ds = d; ds > 0; ds--) {   //
+            System.out.println(ds);
+        }
+
+        int nuM = 10;
+        for (int id = 0; id <= nuM; id++) {
+            /* if (id % 2==0){
+                 int suma2 = i + i;
+
+                 System.out.println("suma de los numeros pares: "+ i+"+"+i+"="+suma2);
+
+             }*/
+            if (id % 2 == 1) {
+                int suma2 = i + i;
+
+                System.out.println("suma de los numeros inpares: " + i + "+" + i + "=" + suma2);
+
+            }
+        }
+
+
+
+
+
+
+
 
     }
-
 }
 
 
