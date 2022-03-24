@@ -6,37 +6,47 @@ public class condicionales {
 
 
     public static void main(String[] args) {
-      /*  byte n = 15;
+    /*  byte n = 15;
                 if(n==10){
                      System.out.println("el numnero corresponde a: "+n);
                 }else
                System.out.println("numero incorrecto");*/
 
 
-        // Crear un programa que ingrese una oración y muestre
-        //cuál es el carácter que más se repite.
-        // No debe incluir el espacio en blanco.
-        // La oración a ingresar no debe estar vacía
-       /* Scanner palabra = new Scanner(System.in);
-        String oracion;
-        System.out.println("ingrese la oracion a evaluar");
-        oracion = palabra.nextLine();
-        for (int i = 0; i < oracion.length(); i++) {
-
-            System.out.println(oracion.substring(i, 1));
+        /*
+        int nt = 5;
+        for (int s = 1; s <= nt; s++ ){
+            int su1 = s+s+s+s+s;
+            System.out.println("la suma es : "+ s+"+"+s+"+"+s+"+"+s+"+"+s+ "=");
         }*/
 
-        //Imprimir la suma de los números impares del 1 al 10
+        String asignado = "";
+
+
+        for( int cone = 6;cone>1;cone++){
+            for (int i = 1; i < cone ; i--) {
+                if(cone % 2==0){
+                    asignado =asignado+ "@";
+                    System.out.println(asignado);}
+                else if(cone % 2== 1) {
+                    asignado =asignado+ "@";
+                    System.out.println(asignado);
+                }
+
+            }
+            System.out.println();
 
 
 
+       }
 
 
+        /*
+        for( int con = 1;con<=3;con++){
+            System.out.println(cara);
 
-
-
-
-}
+        }*/
+    }
 
 
 

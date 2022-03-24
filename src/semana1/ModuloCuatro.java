@@ -259,7 +259,7 @@ public class ModuloCuatro {
         for (int ds = d; ds > 0; ds--) {   //
             System.out.println(ds);
         }
-
+        //Imprimir la suma de los números impares del 1 al 10
         int nuM = 10;
         for (int id = 0; id <= nuM; id++) {
             /* if (id % 2==0){
@@ -276,8 +276,102 @@ public class ModuloCuatro {
             }
         }
 
+        // Crear un programa que ingrese una oración y muestre
+        //cuál es el carácter que más se repite.
+        // No debe incluir el espacio en blanco.
+        // La oración a ingresar no debe estar vacía
+        Scanner palabra = new Scanner(System.in);
+
+        String cadena1; // guarda Sreing ingresado
+        System.out.println("ingrese la oracion a evaluar");
+        cadena1 = palabra.nextLine(); // captura el dato desde el teclado
+
+        String junteTexto = "";
+        int contador = 0;
+        int conti = -1;
+        char caracter = 'h';
+        for ( int c = 0 ; c <cadena1.length();c++   ){ // con lenght me devuelve la longitud de la cadena
+            System.out.println( cadena1.charAt(c));//aqui imprimo c con la funcion charAt para poder visualizar el caracter
+            //System.out.println(c);  si solo imprimo se me solo el valor del indice de cada caracter
+            junteTexto  += cadena1.charAt(c); // aqui guardo el valor de cada caracter para imprimirlo de manera orizontal
+
+        }
+        conti = cadena1.indexOf(caracter) ; //aquí obtengo el primer indice del String
+        System.out.println(conti); // imprimo para verificar el indice
+
+        while(conti != -1){ // comparo el valor del primer indice
+            conti = cadena1.indexOf(caracter,conti+1);
+            contador ++;
+
+        }
+        System.out.println(junteTexto);
+        System.out.println("el caracter "+ caracter +" se repite " +contador + " veces en la oracion");
+
+
+        /*Imprimir la siguiente figura:
+            @
+            @
+            @
+            @
+            @*/
+        char cara = '@';
+
+
+        for( int con = 1;con<=5;con++){
+            System.out.println(cara);
+
+        }
+
+      /*  Imprimir la siguiente figura:
+        @
+        @@
+        @
+        @@
+        @*/
+        for( int cone = 1;cone<=5;cone++){
+
+
+            if(cone % 2==0){
+                System.out.println("@@");
+
+            }else if(cone % 2== 1) {
+                System.out.println('@');
+            }
+
+
+        }
+        /*
+        * Imprimir la siguiente figura:
+        @
+        @@
+        @@@
+        @@@@
+        @@@@@*/
+
+
+        String asignado = "";
+
+
+        for( int cone = 1;cone<=5;cone++){
+            if(cone % 2==0){
+                //   almacena += asignado.charAt(cone);
+                asignado =asignado+ "@";
+                System.out.println(asignado);}
+            else if(cone % 2== 1) {
+                asignado =asignado+ "@@";
+                System.out.println(asignado);
+            }
+
+
+        }
+
+            
+
+
+
 
 
 
     }
+
 }
