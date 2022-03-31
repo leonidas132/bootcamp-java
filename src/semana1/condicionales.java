@@ -1,52 +1,59 @@
 package semana1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class condicionales {
 
 
     public static void main(String[] args) {
-    /*  byte n = 15;
-                if(n==10){
-                     System.out.println("el numnero corresponde a: "+n);
-                }else
-               System.out.println("numero incorrecto");*/
+     Scanner leer = new Scanner(System.in);
+       int numeroUsuario; //ingresado por el usuario
+       int numeroMaximo; //rango de valor
+       System.out.println("indique la cantidad de numero  a generar");
+        numeroUsuario= leer.nextInt();
+       System.out.println("ingrese el rango de numero aleatorio a generar");
+       numeroMaximo = leer.nextInt();
+       int [] pares = new int[numeroUsuario];
 
+        // llenamos el arreglo de enteros con numeros aleatorios
+        for (int i = 1; i < pares.length; i++) {
+            // llenamos el arreglo de enteros con numeros aleatorios
+            int numero = (int)  ((Math.random() * numeroMaximo)+ 1);
+            pares[i] = numero;
 
-        /*
-        int nt = 5;
-        for (int s = 1; s <= nt; s++ ){
-            int su1 = s+s+s+s+s;
-            System.out.println("la suma es : "+ s+"+"+s+"+"+s+"+"+s+"+"+s+ "=");
-        }*/
+        }
+       /* String dev = Arrays.toString(pares);
+        System.out.println(dev);*/
 
-        String asignado = "";
-
-
-        for( int cone = 6;cone>1;cone++){
-            for (int i = 1; i < cone ; i--) {
-                if(cone % 2==0){
-                    asignado =asignado+ "@";
-                    System.out.println(asignado);}
-                else if(cone % 2== 1) {
-                    asignado =asignado+ "@";
-                    System.out.println(asignado);
+        for (int i=0;i <pares.length; i++){
+            boolean esPrimo = true;
+            int numero = pares[i];
+            // un numero es primo cuando posee mas de dos divisores
+            // adicionalmente no tenemos que evaluar todos los numeros por debajo de el, con
+            // evaluar hasta la raiz cuadrada es suficiente
+            for (int j = 2 ;j<=(Math.sqrt(numero));j++){
+                if (numero % j ==0){
+                    esPrimo = false;
+                    break;
                 }
-
             }
-            System.out.println();
+            System.out.println("El numero " + numero + " " + ((!esPrimo || numero ==1)? "no es primo":"es primo"));
+        }
+        String dev = Arrays.toString(pares);
+        leer.close();
 
 
 
-       }
 
 
-        /*
-        for( int con = 1;con<=3;con++){
-            System.out.println(cara);
 
-        }*/
+
+
+
+
     }
+
 
 
 
