@@ -23,7 +23,8 @@ public class principal {
                     "\n 2. size" +
                     "\n 3. remote" +
                     "\n 4. removeAll"+
-                    "\n 5. mostrar datos");
+                    "\n 5. mostrar datos" +
+                    "\n 6. empty");
             System.out.println("ingrese la opcion");
             byte opc = teclado.nextByte();
             switch (opc){
@@ -61,6 +62,9 @@ public class principal {
                         System.out.println(p);
                     }
                     break;
+                case 6:
+                    empty(lisPersona);
+                     break;
             }
 
             System.out.println("desae continar 1 si  0 no");
@@ -91,18 +95,28 @@ public class principal {
 
     }
 
-    // metodo remove
+    // metodo removeAll
     public static void removeAll(ArrayList<Persona> list){
         System.out.println("se eliminaron los datos");
         list.removeAll(lisPersona);
-        System.out.println("finiz");
+
 
         for (Persona p:lisPersona){
             System.out.println(p);
             System.out.println("no hay nada");
         }
     }
-    
+    public static void empty (ArrayList<Persona> lista) {
+        boolean v = false ;
+        boolean r = lista.isEmpty();
+        if (r == v){
+            System.out.println("la lista contiene datos");
+            
+        }else
+            System.out.println("la lista no contiene datos");
+
+    }
+
 }//clase
 
 
