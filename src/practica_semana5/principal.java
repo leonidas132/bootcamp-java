@@ -95,7 +95,7 @@ public class principal {
 
     }
 
-    // metodo removeAll
+    // metodo removeAll--elimina todo de una lista
     public static void removeAll(ArrayList<Persona> list){
         System.out.println("se eliminaron los datos");
         list.removeAll(lisPersona);
@@ -111,7 +111,7 @@ public class principal {
         boolean r = lista.isEmpty();
         if (r == v){
             System.out.println("la lista contiene datos");
-            
+
         }else
             System.out.println("la lista no contiene datos");
 
